@@ -1,0 +1,17 @@
+
+---
+declared-services:
+  dialog-service:
+    label: dialog
+    plan: standard
+  natural-language-classifier-standard:
+    label: natural_language_classifier
+    plan: standard
+applications:
+- services:
+  - dialog-service
+  - Natural Language Classifier-o9
+  name: student-advising-chatbot
+  command: npm start
+  path: .
+  memory: 512M
